@@ -1,0 +1,30 @@
+# 服务器临时日志
+preview_server*.log
+preview_*.log
+
+# 系统垃圾
+Thumbs.db
+.DS_Store
+desktop.ini
+$RECYCLE.BIN/
+
+# 编辑器临时
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# 不要把工作素材推上来
+drafts/
+inputs/
+_templates/
+
+# 不要把本地备份推上来
+*_backup_*/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>众邦康养 · 2026年度战略会议 — 走出浙江 · 共赢银龄</title>
+<meta name="description" content="众邦康养 2026 年度战略部署会议：从一张床位到智慧银龄全生态，下一个征程，走出浙江。">
+
+<!-- Fonts: 思源宋体 + 思源黑体 + Cormorant Garamond -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   众邦康养 2026 v2 — 中高端战略发布
+   设计语言：墨色 + 暗金 + 朱砂（现代中式中高端）
+   参考：蔚来 NIO Day / 华为 Mate RS / Aesop / B&O
+   ============================================================ */
+
+/* === CSS Variables === */
+:root {
+  /* 墨色系统 */
+  --ink-deep:    #0A0908;
+  --ink:         #14110F;
+  --ink-soft:    #1F1B17;
+  --charcoal:    #2C2823;
+  --smoke:       #5C5650;
+
+  /* 金色系统（克制） */
+  --gold:        #B8924A;
+  --gold-soft:   #C9A86A;
+  --gold-pale:   #E8D5A8;
+  --gold-glow:   rgba(184, 146, 74, 0.18);
+
+  /* 朱砂系统（点缀，不到 5% 面积） */
+  --cinnabar:    #8B1A1A;
+  --cinnabar-soft:#A52828;
+  --cinnabar-glow:rgba(139, 26, 26, 0.12);
+
+  /* 纸色系统 */
+  --ivory:       #F5F0E8;
+  --ivory-pure:  #FAF8F4;
+  --paper:       #EFE9DC;
+  --mist:        rgba(245, 240, 232, 0.04);
+
+  /* 阴影 */
+  --shadow-sm:   0 4px 24px rgba(10, 9, 8, 0.08);
+  --shadow-md:   0 8px 48px rgba(10, 9, 8, 0.12);
+  --shadow-lg:   0 24px 80px rgba(10, 9, 8, 0.16);
+
+  /* 字体 */
+  --font-serif:    "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --font-sans:     "Source Han Sans CN", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-display:  "Cormorant Garamond", "Source Han Serif SC", "Times New Roman", serif;
+
+  /* 字号 */
+  --hero:        clamp(2.75rem, 6.5vw, 5.5rem);
+  --h1:          clamp(2.25rem, 4.5vw, 4rem);
+  --h2:          clamp(1.625rem, 3.5vw, 2.75rem);
+  --h3:          clamp(1.25rem, 2.4vw, 1.875rem);
+  --h4:          clamp(1rem, 1.6vw, 1.25rem);
+  --body-lg:     clamp(1rem, 1.2vw, 1.125rem);
+  --body:        1rem;
+  --caption:     0.875rem;
+  --tiny:        0.75rem;
+  --micro:       0.625rem;
+
+  /* 间距 */
+  --section-pad: clamp(2.75rem, 6vh, 5.5rem);
+  --gutter:      clamp(1.25rem, 4vw, 5rem);
+  --max-width:   1440px;
+  --content-width: 1080px;
+  --narrow:      720px;
+
+  /* 动画 */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-slow: 1.4s;
+  --duration-mid:  0.9s;
+  --duration-fast: 0.45s;
+}
+
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--ivory);
+  background: var(--ink-deep);
+  line-height: 1.6;
+  overflow-x: hidden;
+  letter-spacing: 0.01em;
+}
+
+img, svg { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+
+/* === 选区高亮 === */
+::selection {
+  background: var(--gold);
+  color: var(--ink-deep);
+}
+
+/* === 滚动条 === */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--ink-deep); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ============================================================
+   布局系统
+   ============================================================ */
+.slide {
+  min-height: 100vh;
+  position: relative;
+  padding: var(--section-pad) var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide--dark   { background: var(--ink-deep); color: var(--ivory); }
+.slide--ink    { background: var(--ink); color: var(--ivory); }
+.slide--paper  { background: var(--ivory); color: var(--ink); }
+.slide--ivory  { background: var(--ivory-pure); color: var(--ink); }
+.slide--gold-bg{ background: linear-gradient(135deg, #14110F 0%, #1F1B17 60%, #2C2823 100%); color: var(--ivory); }
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.container--narrow  { max-width: var(--content-width); }
+.container--text    { max-width: var(--narrow); }
+
+/* === 顶部导航（章节进度） === */
+.nav-rail {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-sans);
+}
+
+.nav-rail__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--smoke);
+  transition: all var(--duration-fast) var(--ease-out);
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-rail__dot:hover { background: var(--gold-soft); transform: scale(1.4); }
+.nav-rail__dot.is-active {
+  background: var(--gold);
+  transform: scale(1.6);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+
+.nav-rail__dot::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--tiny);
+  color: var(--gold-soft);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+.nav-rail__dot:hover::after { opacity: 1; }
+
+/* === 页码 === */
+.page-marker {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-family: var(--font-display);
+  font-size: var(--caption);
+  color: var(--gold-soft);
+  letter-spacing: 0.3em;
+  z-index: 10;
+}
+
+.page-marker--right { left: auto; right: 2rem; }
+.page-marker__num  { color: var(--gold); font-size: 1.125rem; }
+
+/* ============================================================
+   排版组件
+   ============================================================ */
+
+/* 章节标签 */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--tiny);
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.eyebrow--paper { color: var(--cinnabar); }
+.eyebrow--paper::before { background: var(--cinnabar); }
+
+/* 主标题 */
+.hero-title {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: var(--hero);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ivory);
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.05em;
+  letter-spacing: -0.01em;
+}
+
+.h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: var(--h1);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ivory);
+}
+
+.h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--h2);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--h3);
+  line-height: 1.3;
+}
+
+.body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--body-lg);
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.body-text {
+  font-family: var(--font-serif);
+  font-size: var(--body);
+  line-height: 1.85;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-size: var(--caption);
+  letter-spacing: 0.2em;
+  color: var(--gold-soft);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* 金色装饰线 */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 2rem 0;
+}
+
+.divider--center { margin: 2rem auto; }
+.divider--long   { width: 120px; }
+.divider--vertical { width: 1px; height: 60px; background: var(--gold); }
+
+/* 章节大数字（不用章回体，用极简序号） */
+.chapter-num {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(6rem, 14vw, 12rem);
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.15;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  letter-spacing: -0.05em;
+}
+
+/* ============================================================
+   卡片
+   ============================================================ */
+.card {
+  background: rgba(245, 240, 232, 0.03);
+  border: 1px solid rgba(184, 146, 74, 0.15);
+  padding: 2.5rem;
+  position: relative;
+  transition: all var(--duration-mid) var(--ease-out);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  background: rgba(245, 240, 232, 0.05);
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card--paper {
+  background: var(--ivory-pure);
+  border: 1px solid rgba(184, 146, 74, 0.18);
+  color: var(--ink);
+}
+
+.card--paper:hover {
+  background: var(--ivory);
+  border-color: var(--gold);
+}
+
+.card__num {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--gold);
+  letter-spacing: 0.3em;
+  margin-bottom: 1.25rem;
+}
+
+.card__title {
+  font-family: var(--font-serif);
+  font-size: var(--h4);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.card__desc {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: rgba(245, 240, 232, 0.78);
+}
+
+.card--paper .card__desc { color: rgba(20, 17, 15, 0.7); }
+
+/* ============================================================
+   数据展示
+   ============================================================ */
+.stat {
+  text-align: left;
+  position: relative;
+}
+
+.stat__num {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.stat__num--paper { color: var(--cinnabar); }
+.stat__num--ink   { color: var(--ink); }
+
+.stat__num .stat__unit {
+  font-family: var(--font-serif);
+  font-size: 0.4em;
+  color: var(--gold-soft);
+  font-weight: 400;
+}
+
+.stat__label {
+  font-family: var(--font-sans);
+  font-size: var(--body);
+  font-weight: 500;
+  margin-top: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--ivory);
+}
+
+.stat__desc {
+  font-family: var(--font-sans);
+  font-size: var(--caption);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: rgba(245, 240, 232, 0.55);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   时间线
+   ============================================================ */
+.timeline {
+  position: relative;
+  padding: 0 0 3rem 0;
+}
+
+.timeline__line {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+  opacity: 0.4;
+}
+
+.timeline__track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline__phase {
+  text-align: center;
+  position: relative;
+  padding-top: 24px;
+}
+
+.timeline__phase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--ink-deep), 0 0 0 5px var(--gold);
+  z-index: 2;
+}
+
+.timeline__phase-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--h4);
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.timeline__phase-period {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--gold-soft);
+  letter-spacing: 0.2em;
+}
+
+/* 详细里程碑 */
+.milestones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.milestone {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.5rem;
+  transition: all var(--duration-mid) var(--ease-out);
+}
+
+.milestone:hover { border-left-color: var(--gold-soft); transform: translateX(4px); }
+
+.milestone__year {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.milestone__title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  color: var(--ivory);
+}
+
+.milestone__desc {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  font-weight: 300;
+  color: rgba(245, 240, 232, 0.65);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   网格布局
+   ============================================================ */
+.grid { display: grid; gap: 1.5rem; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-2x4 { grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); }
+.grid-7   { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+@media (max-width: 900px) {
+  .grid-2, .grid-3, .grid-4, .grid-2x4 { grid-template-columns: 1fr; }
+  .timeline__track { grid-template-columns: 1fr; gap: 3rem; }
+  .timeline__line { display: none; }
+}
+
+/* ============================================================
+   滚动进入动画
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--delay-1 { transition-delay: 0.1s; }
+.reveal--delay-2 { transition-delay: 0.2s; }
+.reveal--delay-3 { transition-delay: 0.3s; }
+.reveal--delay-4 { transition-delay: 0.4s; }
+.reveal--delay-5 { transition-delay: 0.5s; }
+
+/* 数字递增动画 */
+.count-up {
+  display: inline-block;
+}
+
+/* ============================================================
+   装饰元素
+   ============================================================ */
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(184, 146, 74, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 146, 74, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.bg-glow--tl { top: -200px; left: -200px; }
+.bg-glow--br { bottom: -200px; right: -200px; }
+
+/* 金色边框装饰 */
+.frame {
+  position: absolute;
+  inset: 2rem;
+  border: 1px solid var(--gold);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.frame::before, .frame::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--gold);
+}
+
+.frame::before { top: -2px; left: -2px; border-right: none; border-bottom: none; }
+.frame::after  { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+
+/* 印章式装饰（克制版） */
+.seal {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border: 2px solid var(--cinnabar);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 900;
+  color: var(--cinnabar);
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.2;
+  opacity: 0.85;
+  transform: rotate(-6deg);
+}
+
+.seal::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid var(--cinnabar);
+}
+
+/* 真实 LOGO（封面 + 全局页脚位） */
+.corner-logo {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 90px;
+  height: auto;
+  z-index: 5;
+  filter:
+    drop-shadow(0 4px 16px rgba(232, 134, 32, 0.30))
+    drop-shadow(0 0 40px rgba(232, 134, 32, 0.15));
+  transition: transform var(--duration-mid) var(--ease-out);
+}
+.corner-logo:hover {
+  transform: scale(1.05);
+}
+.corner-logo-left {
+  right: auto;
+  left: 2.5rem;
+}
+
+/* 真实 LOGO（誓词页中央水印） */
+.seal-logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: auto;
+  opacity: 0.22;
+  z-index: 1;
+  filter:
+    drop-shadow(0 0 60px rgba(232, 134, 32, 0.20))
+    brightness(0.9);
+}
+
+/* 底部金色徽章（结语页底部点缀） */
+.footer-badge {
+  display: inline-block;
+  padding: 0.65rem 2rem;
+  background: var(--gold);
+  color: var(--ink-deep);
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--caption);
+  letter-spacing: 0.25em;
+  border-radius: 2px;
+  box-shadow: 0 6px 28px rgba(184, 146, 74, 0.30);
+}
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: clamp(3rem, 8vh, 5rem);
+    --gutter: 1.25rem;
+  }
+  .nav-rail { display: none; }
+  .page-marker { bottom: 1rem; font-size: var(--tiny); }
+}
+</style>
+</head>
+<body>
+<!-- ============================================================
+     SLIDE 01 · COVER 封面
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-1">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--tl"></div>
+  <div class="bg-glow bg-glow--br"></div>
+  <div class="frame"></div>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">ZHONGBANG · EST. 2003</div>
+    </div>
+
+    <h1 class="hero-title reveal reveal--delay-1">
+      走出浙江<br>
+      <em>共赢银龄</em>
+    </h1>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 3rem;">
+      <p class="h3" style="font-weight: 400; color: var(--ivory); letter-spacing: 0.05em;">
+        众邦康养 · 2026 年度战略部署会议
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2rem;">
+      <p class="body-lg" style="color: var(--gold-soft); max-width: 640px;">
+        从一张床位，到智慧银龄全生态<br>
+        下一个征程，走出浙江
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-4" style="margin-top: 2.5rem; display: flex; gap: 3rem; align-items: center;">
+      <div style="width: 48px; height: 1px; background: var(--gold);"></div>
+      <p class="caption">众邦康养集团 · 2026</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+
+  <div class="page-marker">
+    <span class="page-marker__num">01</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 02 · QUOTE 引用
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-2">
+  <div class="bg-glow" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+
+  <div class="container container--narrow" style="text-align: center; position: relative; z-index: 2;">
+    <div class="reveal">
+      <div style="font-family: var(--font-display); font-size: 6rem; color: var(--gold); opacity: 0.5; line-height: 1;">"</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <p class="h2" style="font-weight: 500; line-height: 1.5; letter-spacing: 0.05em; color: var(--ivory);">
+        养老不是<span style="color: var(--gold);">「等天黑」</span><br>
+        是<span style="color: var(--gold);">「把灯点亮」</span>
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 3rem;">
+      <div style="width: 60px; height: 1px; background: var(--gold); margin: 0 auto;"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2rem;">
+      <p class="caption">— 众邦康养创始人 · 杨树清</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">02</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 03 · CHAPTER 壹 · 回望来路
+     ============================================================ -->
+<section class="slide slide--gold-bg" id="slide-3">
+  <div class="bg-grid"></div>
+  <div class="chapter-num">壹</div>
+
+  <div class="container" style="text-align: center; position: relative; z-index: 1;">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content: center;">CHAPTER ONE</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="margin-top: 1rem;">
+        回 望 来 路
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 2rem;">
+      <div class="divider divider--center divider--long"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3">
+      <p class="body-lg" style="max-width: 720px; margin: 0 auto; color: rgba(245, 240, 232, 0.78);">
+        二十三年深耕康养，从一个人、一扇门、一张床位<br>
+        到智慧银龄全生态平台
+      </p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">03</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 04 · 发展历程 四步跃迁
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-4">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">2003 — 2026 · 历程</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1">四步跃迁<span style="color: var(--gold);">·</span><em style="font-style: normal; color: var(--gold);">从一张床位到一个生态</em></h2>
+    </div>
+
+    <!-- 四阶段时间线 -->
+    <div class="timeline reveal reveal--delay-2" style="margin-top: 2.5rem;">
+      <div class="timeline__line"></div>
+      <div class="timeline__track">
+        <div class="timeline__phase">
+          <div class="timeline__phase-period">2003 — 2012</div>
+          <div class="timeline__phase-title">起步探索</div>
+        </div>
+        <div class="timeline__phase">
+          <div class="timeline__phase-period">2013 — 2018</div>
+          <div class="timeline__phase-title">医养融合</div>
+        </div>
+        <div class="timeline__phase">
+          <div class="timeline__phase-period">2019 — 2022</div>
+          <div class="timeline__phase-title">规模扩张</div>
+        </div>
+        <div class="timeline__phase">
+          <div class="timeline__phase-period">2023 — 2026</div>
+          <div class="timeline__phase-title">生态跃迁</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 详细里程碑 -->
+    <div class="milestones">
+      <div class="milestone reveal">
+        <div class="milestone__year">2003</div>
+        <div class="milestone__title">品牌启航 · 初心入局</div>
+        <div class="milestone__desc">创始人杨树清先生正式入局医疗康养赛道，深耕大健康与养老产业，开启集团专业化、规模化康养布局之路。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-1">
+        <div class="milestone__year">2009</div>
+        <div class="milestone__title">企业筑基 · 集团化布局</div>
+        <div class="milestone__desc">上海众邦医院投资管理公司正式成立，迈入规范化企业运营阶段，为后续医疗机构、养老项目投资与运营奠定坚实基础。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-2">
+        <div class="milestone__year">2013</div>
+        <div class="milestone__title">医疗底座 · 筹建医院</div>
+        <div class="milestone__desc">牵头筹建金华市首家二级专科康复医院——金华众康康复医院，奠定医疗底座。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-3">
+        <div class="milestone__year">2015</div>
+        <div class="milestone__title">医养并行 · 双业态落地</div>
+        <div class="milestone__desc">众康医院正式运营，同步成立婺城区众邦老年保健怡养院，实现医疗康复与机构养老双向融合。2016获评“浙江省知名民办养老机构”。</div>
+      </div>
+      <div class="milestone reveal">
+        <div class="milestone__year">2017</div>
+        <div class="milestone__title">公建民营 · 承接市级首标</div>
+        <div class="milestone__desc">成功承接金华市首个公建民营养老项目——金东区多湖敬老院，成为区域养老改革示范样本。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-1">
+        <div class="milestone__year">2018</div>
+        <div class="milestone__title">模式升级 · 双标杆落地</div>
+        <div class="milestone__desc">成立金华金东悦年怡养护理院，并承接改造和运营金华市首家浙江省标准街道示范型居家养老服务中心，开启社区居家养老标准化运营新时代。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-2">
+        <div class="milestone__year">2019</div>
+        <div class="milestone__title">居家养老 · 17家中心</div>
+        <div class="milestone__desc">运营 17 家省级标准示范型居家养老服务中心，覆盖金华核心区域，15 分钟养老服务圈初步成型。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-3">
+        <div class="milestone__year">2021</div>
+        <div class="milestone__title">多点落地 · 政企协同</div>
+        <div class="milestone__desc">拓展民建民营项目 3 家；与国企合资成立金开养老产业开发，开启政企合作高质量发展模式。</div>
+      </div>
+      <div class="milestone reveal">
+        <div class="milestone__year">2023</div>
+        <div class="milestone__title">数字底座 · 展示窗口</div>
+        <div class="milestone__desc">建成金华市首家智慧居家养老展示中心，标准化输出智慧康养运营体系与服务模式。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-1">
+        <div class="milestone__year">2024</div>
+        <div class="milestone__title">银龄学堂 · 嵌入式升级</div>
+        <div class="milestone__desc">创立乐悠年老年大学，首年吸纳学员超 1500 人；打造浙江省首家社区嵌入式为老服务综合体。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-2">
+        <div class="milestone__year">2025</div>
+        <div class="milestone__title">高阶迭代 · 旗舰落地</div>
+        <div class="milestone__desc">运营金华首家综合性老年服务中心；首家院院联动医养结合院区。投资布局上亿级高端康养一体化项目——积道山康养项目。</div>
+      </div>
+      <div class="milestone reveal reveal--delay-3" style="border-left-color: var(--cinnabar);">
+        <div class="milestone__year" style="color: var(--cinnabar);">2026</div>
+        <div class="milestone__title" style="color: var(--gold);">走出浙江 · 招商元年</div>
+        <div class="milestone__desc">上线96360线上便民服务平台，打通线上咨询、上门服务、便民调度全链路。实现养老服务数字化便民闭环;全新孵化“悦年优护”子品牌，全国招商正式开放，从区域龙头迈向全国化品牌。</div>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">04</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 05 · 品牌定位 智慧银龄全生态
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-5">
+  <div class="bg-glow bg-glow--tl"></div>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">品牌定位 · POSITIONING</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="margin-bottom: 0.75rem;">
+        智慧<em>·</em>银龄<em>·</em>全<em>·</em>生态
+      </h2>
+      <p class="body-lg" style="color: var(--gold-soft); letter-spacing: 0.15em;">八 个 字 · 四 个 词 · 每 一 个 都 有 明 确 战 略 指 向</p>
+    </div>
+
+    <div class="grid grid-2 reveal reveal--delay-2" style="margin-top: 2.5rem; gap: 2rem;">
+      <div class="card">
+        <div class="card__num">01</div>
+        <div class="card__title" style="color: var(--gold); font-size: 2rem; margin-bottom: 1.25rem;">智慧</div>
+        <div class="caption" style="margin-bottom: 1rem;">数字化壁垒</div>
+        <div class="card__desc">
+          以自研 SaaS 平台为数字基座，AI 多智能体协同为决策中枢，构建覆盖健康监测、风险预判、服务调度、家属联动的实时闭环——不是"用了科技的养老"，而是让 AI 从被动响应走向主动守护。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__num">02</div>
+        <div class="card__title" style="color: var(--gold); font-size: 2rem; margin-bottom: 1.25rem;">银龄</div>
+        <div class="caption" style="margin-bottom: 1rem;">备老 · 享老 · 养老 · 临终</div>
+        <div class="card__desc">
+          围绕各人生阶段，打造覆盖多年龄段的一站式银龄综合服务平台。运营30余家养老机构及服务站点，600 人专业持证护理团队提供落地保障，累计服务超 3 万个家庭。从青壮年的备老规划，到长者的享老生活，再到照护与临终的全周期陪伴——不是只服务老人，而是服务人生的每一程。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__num">03</div>
+        <div class="card__title" style="color: var(--gold); font-size: 2rem; margin-bottom: 1.25rem;">全</div>
+        <div class="caption" style="margin-bottom: 1rem;">七位一体</div>
+        <div class="card__desc">
+          医、康、养、护、智、学、助——七个从人民日益增长的美好生活需要上自发生长起来的模式。一条生命线贯穿到底，不需要"再找下一家"。不是加法，是生态。
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__num">04</div>
+        <div class="card__title" style="color: var(--gold); font-size: 2rem; margin-bottom: 1.25rem;">生态</div>
+        <div class="caption" style="margin-bottom: 1rem;">全周期解决方案</div>
+        <div class="card__desc">
+          基于全生态布局，从日常衣食住行，到健康管理、照护与陪伴，提供全周期解决方案。自营机构输出标准、加盟商扩大覆盖、患者沉淀临床数据、医院反哺医学能力——每一板块在服务自己用户的同时，也在为其他板块创造价值。不是简单相加，是让生态自己生长。
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2rem; text-align: center;">
+      <p class="caption" style="color: var(--cinnabar-soft);">"智慧"是引擎 · "康养"是底盘 · "全"是连接 · "生态"是涌现</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">05</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 06 · 使命与愿景
+     ============================================================ -->
+<section class="slide slide--paper" id="slide-6">
+  <div class="bg-grid" style="opacity: 0.4;"></div>
+
+  <div class="container container--narrow" style="text-align: center; position: relative; z-index: 1;">
+    <div class="reveal">
+      <div class="eyebrow eyebrow--paper" style="justify-content: center;">使命 · 愿景 · MISSION & VISION</div>
+    </div>
+
+    <div class="reveal reveal--delay-1" style="margin-top: 3rem;">
+      <p class="caption" style="color: var(--cinnabar);">使 命</p>
+      <h2 class="h1" style="margin-top: 1rem; color: var(--ink);">
+        用 <em style="color: var(--cinnabar); font-style: normal;">智慧</em> 点亮人生每一程
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 2rem;">
+      <p class="body-text" style="color: rgba(20, 17, 15, 0.75);">
+        从备老到享老 从养老到临终——<br>
+        人生的每一程 都不该在暗里等待 而该被温柔照亮<br>
+        养老不是「等天黑」 是「把灯点亮」<br>
+        我们以智慧康养为底座 专业与温度为支柱<br>
+        引每一段生命走出有尊严 有温度 有期待的轨迹
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin: 2rem auto;">
+      <div class="divider divider--center divider--long" style="background: var(--cinnabar);"></div>
+    </div>
+
+    <div class="reveal reveal--delay-4">
+      <p class="caption" style="color: var(--cinnabar);">愿 景</p>
+      <h2 class="h1" style="margin-top: 1rem; color: var(--ink);">
+        开创 <em style="color: var(--cinnabar); font-style: normal;">中国康养</em> 新范式
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 2rem;">
+      <p class="body-text" style="color: rgba(20, 17, 15, 0.75);">
+        以科技为基石 服务为温度 自研平台为支撑<br>
+        构建覆盖全国核心社区的智慧康养生态体系<br>
+        从长三角出发 匠心打造<br>
+        「中华银龄家园」与「智慧康养之心」生态布局<br>
+        将这一体系延伸到每一座城市 每一个家庭<br>
+        全力助推国家「9073」养老战略走深走实<br>
+        开创中国人自己的康养新范式<br>
+        ——引领整个产业向智慧化 多元化方向迭代升级
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 3rem; display: flex; justify-content: center; gap: 4rem;">
+      <div style="text-align: center;">
+        <p class="caption" style="color: var(--cinnabar);">对 长 者</p>
+        <p class="h4" style="margin-top: 0.5rem; color: var(--ink);">被善待 · 有尊严 · 不孤独</p>
+      </div>
+      <div style="width: 1px; background: rgba(20, 17, 15, 0.2);"></div>
+      <div style="text-align: center;">
+        <p class="caption" style="color: var(--cinnabar);">对 子 女</p>
+        <p class="h4" style="margin-top: 0.5rem; color: var(--ink);">透明 · 专业 · 可托付</p>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+
+  <div class="page-marker" style="color: var(--cinnabar);">
+    <span class="page-marker__num" style="color: var(--cinnabar);">06</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 07 · 核心价值观
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-7">
+  <div class="bg-glow bg-glow--br"></div>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">知行合一 · VALUES</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1">
+        众邦价值观
+      </h2>
+      <p class="body-lg" style="color: var(--gold-soft); margin-top: 1rem; letter-spacing: 0.15em;">五 个 字 · 一 条 价 值 观 的 升 华 路 径</p>
+    </div>
+
+    <div class="grid grid-7 reveal reveal--delay-2" style="margin-top: 2.5rem; gap: 1.25rem;">
+      <div class="card" style="text-align: center; padding: 1.25rem 0.75rem;">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); line-height: 1; font-weight: 500;">心</div>
+        <div class="card__title" style="margin-top: 1rem; font-size: 1.125rem;">心怀敬畏</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">原点</div>
+        <div class="card__desc" style="margin-top: 0.75rem; font-size: 0.8125rem;">
+          对每一位长者的生命心怀敬畏<br>这是所有照护行为的起点
+        </div>
+      </div>
+
+      <div class="card" style="text-align: center; padding: 1.25rem 0.75rem;">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); line-height: 1; font-weight: 500;">命</div>
+        <div class="card__title" style="margin-top: 1rem; font-size: 1.125rem;">守正立命</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">底线</div>
+        <div class="card__desc" style="margin-top: 0.75rem; font-size: 0.8125rem;">
+          守住不可逾越的正道与底线<br>透明定价 真实数据
+        </div>
+      </div>
+
+      <div class="card" style="text-align: center; padding: 1.25rem 0.75rem;">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); line-height: 1; font-weight: 500;">术</div>
+        <div class="card__title" style="margin-top: 1rem; font-size: 1.125rem;">专业立身</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">能力</div>
+        <div class="card__desc" style="margin-top: 0.75rem; font-size: 0.8125rem;">
+          以专业兑现敬畏<br>每一张床的倾斜角度背后有标准
+        </div>
+      </div>
+
+      <div class="card" style="text-align: center; padding: 1.25rem 0.75rem;">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); line-height: 1; font-weight: 500;">德</div>
+        <div class="card__title" style="margin-top: 1rem; font-size: 1.125rem;">至诚至善</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">准则</div>
+        <div class="card__desc" style="margin-top: 0.75rem; font-size: 0.8125rem;">
+          养老是"人对人"的行业<br>让每次接触经得起良心的审视
+        </div>
+      </div>
+
+      <div class="card" style="text-align: center; padding: 1.25rem 0.75rem;">
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); line-height: 1; font-weight: 500;">行</div>
+        <div class="card__title" style="margin-top: 1rem; font-size: 1.125rem;">众志成城</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">知行合一</div>
+        <div class="card__desc" style="margin-top: 0.75rem; font-size: 0.8125rem;">
+          不同角色因同一使命汇聚成城<br>构筑守护万家的城邦。
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2rem; text-align: center;">
+      <p class="body-text" style="color: var(--gold-soft); font-style: italic; max-width: 720px; margin: 0 auto; font-size: 0.875rem;">
+        "城，是守护的意象——一座为长者筑起的、有墙有门有灯火的城。"
+      </p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">07</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 08 · 七位一体生态
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-8">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">七位一体生态 · ECOSYSTEM</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1">智慧银龄全生态<br><em style="font-style: normal; color: var(--gold);">全生命周期解决方案</em></h2>
+    </div>
+
+    <div class="grid grid-7 reveal reveal--delay-2" style="margin-top: 2rem; gap: 1rem;">
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">医</div>
+        <div class="card__title">安康守护</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">医疗底座</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          自持二级综合性民营医院——众康康复医院。最深的根。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">康</div>
+        <div class="card__title">活力重启</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">标杆机构</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          标准化医养结合康养机构。康复在生活里继续。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">养</div>
+        <div class="card__title">朝夕相伴</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">15 分钟圈</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          居家养老服务圈。居家养老不是妥协，而是个性化服务。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">护</div>
+        <div class="card__title">贴心照护</div>
+<div class="caption" style="margin-top: 0.5rem; color: var(--gold);">持证率 95%</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          五级照护方案。好照护不是“盯着”，是“懂得”。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--cinnabar);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--cinnabar-soft); font-weight: 500; margin-bottom: 0.5rem;">智</div>
+        <div class="card__title">智慧云伴</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--cinnabar-soft);">AI 主动守护</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          从自研Saas数字底座到Agent智慧大脑。从被动响应到主动守护。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">学</div>
+        <div class="card__title">银龄学堂</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">1500+ 学员</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          教、学、研、游四位一体。从被服务者到生态共建者。
+        </div>
+      </div>
+
+      <div class="card" style="text-align: left; padding: 1.25rem 1rem; border-top: 2px solid var(--gold);">
+        <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;">助</div>
+        <div class="card__title">老有所安</div>
+        <div class="caption" style="margin-top: 0.5rem; color: var(--gold);">六助一体</div>
+        <div class="card__desc" style="margin-top: 1rem;">
+          六助一体化便民帮扶。96120/96360·24 小时应急响应。
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2rem; padding: 1.25rem; border: 1px solid var(--gold); text-align: center;">
+      <p class="caption" style="color: var(--gold);">生 态 闭 环</p>
+      <p class="h4" style="margin-top: 0.75rem;">不是加法，是乘法</p>
+      <p class="body-text" style="margin-top: 1rem; color: rgba(245, 240, 232, 0.7); max-width: 720px; margin-left: auto; margin-right: auto;">
+        每个板块在服务自己用户的同时，都在为其他板块创造价值。
+      </p>
+      <p class="body-text" style="margin-top: 0.75rem; color: var(--gold-soft); max-width: 720px; margin-left: auto; margin-right: auto; font-style: italic; letter-spacing: 0.08em;">
+        ——从人民真实需要中长出来的生态，是企业可持续发展的自生力量。
+      </p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">08</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 09 · 三重不可替代性
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-9">
+  <div class="bg-grid"></div>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">差异化根基 · WHY US</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1">
+        三 重 不 可 替 代 性
+      </h2>
+      <p class="body-lg" style="color: var(--gold-soft); margin-top: 1rem;">为什么是他们做不了</p>
+    </div>
+
+    <div class="grid grid-3 reveal reveal--delay-2" style="margin-top: 2.5rem; gap: 2.5rem;">
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 8rem; color: var(--gold); font-weight: 300; line-height: 1; letter-spacing: -0.05em;">医</div>
+        <div class="divider divider--center" style="background: var(--gold);"></div>
+        <div class="caption" style="color: var(--gold); margin-bottom: 1rem;">不可复制 · 医疗底座</div>
+        <p class="h4" style="margin-bottom: 1rem;">自有医院·护理院</p>
+        <p class="body-text" style="color: rgba(245, 240, 232, 0.65); font-size: 0.9375rem; line-height: 1.7;">
+          以众康康复医院与悦年护理院为医疗支撑<br>搭载7家养老机构与25家居家养老服务中心<br>打造健康生态底座。
+        </p>
+      </div>
+
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 8rem; color: var(--gold); font-weight: 300; line-height: 1; letter-spacing: -0.05em;">智</div>
+        <div class="divider divider--center" style="background: var(--gold);"></div>
+        <div class="caption" style="color: var(--gold); margin-bottom: 1rem;">技术壁垒 · 数据闭环</div>
+        <p class="h4" style="margin-bottom: 1rem;">自研 SaaS 平台与AI智能体搭建</p>
+        <p class="body-text" style="color: rgba(245, 240, 232, 0.65); font-size: 0.9375rem; line-height: 1.7;">
+          悦年优护智慧养老 SaaS 平台打通老人 · 家属 · 护理员全链路<br>AI智能体覆盖全流程自动化监管与迭代进化<br>从被动响应走向主动守护
+        </p>
+      </div>
+
+      <div style="text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 8rem; color: var(--gold); font-weight: 300; line-height: 1; letter-spacing: -0.05em;">态</div>
+        <div class="divider divider--center" style="background: var(--gold);"></div>
+        <div class="caption" style="color: var(--gold); margin-bottom: 1rem;">生态壁垒 · 自生能力</div>
+        <p class="h4" style="margin-bottom: 1rem;">七位一体生态协同</p>
+        <p class="body-text" style="color: rgba(245, 240, 232, 0.65); font-size: 0.9375rem; line-height: 1.7;">
+          医 · 康 · 养 · 护 · 智 · 学 · 助<br>七个板块从人民需要中自发长成 · 互相赋能价值<br>提供生命全周期解决方案。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">09</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 10 · 行业首创与领先成绩
+     ============================================================ -->
+<section class="slide slide--paper" id="slide-10">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow eyebrow--paper">金华第一 · 浙江标杆 · 全国起点</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="color: var(--ink);">
+        行 业 首 创 <em style="color: var(--cinnabar); font-style: normal;">·</em> 领 先 成 绩
+      </h2>
+    </div>
+
+    <div class="grid grid-4 reveal reveal--delay-2" style="margin-top: 2rem; gap: 1.5rem;">
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">医疗康复</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家二级专科医院</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">众康康复医院</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">公建民营</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首个公建民营项目</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">金东区多湖敬老院</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">国企合作</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家国企合资</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">金开养老</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">居家养老</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">浙江首个街道示范型</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">城东街道服务中心</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">民建民营</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家民建民营</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">东阳千祥养老服务中心</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">智慧养老</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家智慧生态平台</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">悦年优护 SaaS</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">老年教育</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家民办老年大学</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">乐悠年老年大学</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">医养结合</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家院院联动</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">金开苏孟康养中心</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">高端康养</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家高端康养小镇</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">积道山康养 240 亩</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">非急救</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家非急救业务</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">96120 转运</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem;">
+        <div class="caption" style="color: var(--cinnabar);">社区嵌入</div>
+        <div class="card__title" style="color: var(--ink); font-size: 1rem; margin-top: 0.75rem;">金华首家社区综合体</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">东湄未来社区</div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; background: var(--ink); border-color: var(--gold);">
+        <div class="caption" style="color: var(--gold);">运营标杆</div>
+        <div class="card__title" style="color: var(--ivory); font-size: 1rem; margin-top: 0.75rem;">三 项 第 一</div>
+        <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem; color: rgba(245, 240, 232, 0.65);">持证率 · 入住率 · 床位数</div>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker" style="color: var(--cinnabar);">
+    <span class="page-marker__num" style="color: var(--cinnabar);">10</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 11 · 二十三年硕果
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-11">
+  <div class="bg-glow bg-glow--tl"></div>
+  <div class="bg-glow bg-glow--br"></div>
+
+  <div class="container">
+    <div class="reveal" style="text-align: center;">
+      <div class="eyebrow" style="justify-content: center;">用 数 据 证 明 实 力</div>
+    </div>
+
+    <div class="reveal reveal--delay-1" style="text-align: center;">
+      <h2 class="h1" style="margin-top: 1rem;">二 十 三 年 硕 果</h2>
+    </div>
+
+    <div class="grid grid-4 reveal reveal--delay-2" style="margin-top: 2.5rem; gap: 3rem;">
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="23">0</span></div>
+        <div class="stat__label" style="color: var(--gold);">年 深耕康养</div>
+        <div class="stat__desc">2003 年起 · 初心不改</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="30">0</span><span class="stat__unit">+</span></div>
+        <div class="stat__label" style="color: var(--gold);">分支机构</div>
+        <div class="stat__desc">医疗 + 养老 + 居家</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="3000">0</span><span class="stat__unit">+</span></div>
+        <div class="stat__label" style="color: var(--gold);">管理床位</div>
+        <div class="stat__desc">从一张床位到三千床位</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="800">0</span><span class="stat__unit">+</span></div>
+        <div class="stat__label" style="color: var(--gold);">集团员工</div>
+        <div class="stat__desc">护理 600 + 医疗 200</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="95">0</span><span class="stat__unit">%</span></div>
+        <div class="stat__label" style="color: var(--gold);">入住率</div>
+        <div class="stat__desc">连续三年保持高位</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="90">0</span><span class="stat__unit">%</span></div>
+        <div class="stat__label" style="color: var(--gold);">持证率</div>
+        <div class="stat__desc">中级以上 50%</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="30000">0</span><span class="stat__unit">+</span></div>
+        <div class="stat__label" style="color: var(--gold);">服务家庭</div>
+        <div class="stat__desc">真实选择 · 值得信赖</div>
+      </div>
+
+      <div class="stat" style="text-align: center;">
+        <div class="stat__num"><span class="count-up" data-target="20">0</span><span class="stat__unit">+</span></div>
+        <div class="stat__label" style="color: var(--gold);">省市荣誉</div>
+        <div class="stat__desc">五大体系认证</div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2.5rem; text-align: center;">
+      <div class="divider divider--center"></div>
+      <p class="caption" style="margin-top: 1rem; color: var(--gold-soft);">23 YEARS · 13 YEARS · NEXT 5 YEARS</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">11</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 12 · CHAPTER 贰 · 战略蓝图
+     ============================================================ -->
+<section class="slide slide--gold-bg" id="slide-12">
+  <div class="bg-grid"></div>
+  <div class="chapter-num">贰</div>
+
+  <div class="container" style="text-align: center; position: relative; z-index: 1;">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content: center;">CHAPTER TWO</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="margin-top: 1rem;">
+        战 略 蓝 图
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 2rem;">
+      <div class="divider divider--center divider--long"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3">
+      <p class="body-lg" style="max-width: 720px; margin: 0 auto; color: rgba(245, 240, 232, 0.78);">
+        走出浙江，以市场化招商为切入点<br>
+        从区域龙头迈向全国化品牌
+      </p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">12</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 13 · 论持久战 战略思想
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-13">
+  <div class="bg-glow" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+
+  <div class="container">
+    <div class="grid grid-2" style="gap: 6rem; align-items: center;">
+      <div class="reveal">
+        <div class="eyebrow">战 略 思 想 · STRATEGIC MINDSET</div>
+
+        <h2 class="h1" style="margin-top: 1.5rem;">
+          打 胜 内 心 的<br>
+          <em style="font-style: normal; color: var(--gold);">「持 久 战」</em>
+        </h2>
+
+        <div class="divider" style="margin: 2rem 0;"></div>
+
+        <p class="body-text" style="color: rgba(245, 240, 232, 0.78); font-style: italic;">
+          "一切困难的根源，就在于自己内心的'持久战'。"
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="card reveal reveal--delay-1" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500; line-height: 1; min-width: 60px;">志</div>
+          <div>
+            <div class="caption" style="color: var(--gold);">坚定志向</div>
+            <p class="h4" style="margin-top: 0.5rem; margin-bottom: 0.75rem;">方向对了，每天都是黄金时代</p>
+            <p class="card__desc">养老不是百米冲刺，是一代人接着一代人往下走的远征。走出浙江，是一场需要战略定力的持久战。</p>
+          </div>
+        </div>
+
+        <div class="card reveal reveal--delay-2" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500; line-height: 1; min-width: 60px;">心</div>
+          <div>
+            <div class="caption" style="color: var(--gold);">内心坚定</div>
+            <p class="h4" style="margin-top: 0.5rem; margin-bottom: 0.75rem;">先占领自己的思想</p>
+            <p class="card__desc">要想占领别人的思想，必须先占领自己的思想。我们内心的"持久战"赢了，外部的困难才会迎刃而解。</p>
+          </div>
+        </div>
+
+        <div class="card reveal reveal--delay-3" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500; line-height: 1; min-width: 60px;">行</div>
+          <div>
+            <div class="caption" style="color: var(--gold);">长期行动</div>
+            <p class="h4" style="margin-top: 0.5rem; margin-bottom: 0.75rem;">每一程都要打胜仗</p>
+            <p class="card__desc">温度不在一次性的热情里，是在日复一日不被看见的坚持中。十三年做对了方向，下一个十三年把方向变成版图。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">13</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 14 · 五年战略规划 2026-2030
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-14">
+  <div class="container">
+    <div class="reveal" style="text-align: center;">
+      <div class="eyebrow" style="justify-content: center;">2026 — 2030 · 五年战略</div>
+    </div>
+
+    <div class="reveal reveal--delay-1" style="text-align: center;">
+      <h2 class="h1" style="margin-top: 1rem;">
+        从金华标杆<br>
+        <em style="font-style: normal; color: var(--gold);">到全国化布局</em>
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 2.5rem;">
+      <div class="grid" style="grid-template-columns: repeat(5, 1fr); gap: 0; position: relative;">
+        <!-- 连接线 -->
+        <div style="position: absolute; top: 32px; left: 5%; right: 5%; height: 2px; background: linear-gradient(to right, var(--gold), var(--cinnabar)); opacity: 0.4; z-index: 0;"></div>
+
+        <!-- 2026 -->
+        <div style="text-align: center; position: relative; z-index: 1; padding: 0 0.5rem;">
+          <div style="width: 64px; height: 64px; margin: 0 auto; background: var(--ink-deep); border: 2px solid var(--cinnabar); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--cinnabar-soft); font-weight: 600;">26</div>
+          <p class="caption" style="margin-top: 1.25rem; color: var(--cinnabar-soft);">2026 · 市场化元年</p>
+          <p class="h4" style="margin-top: 0.5rem; color: var(--gold);">3 家模型店</p>
+          <ul style="margin-top: 1rem; list-style: none; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(245, 240, 232, 0.7); line-height: 1.8;">
+            <li>建立招商加盟体系</li>
+            <li>3 家标杆模型店</li>
+            <li>悦年优护规模化</li>
+            <li>单店盈利模型</li>
+          </ul>
+        </div>
+
+        <!-- 2027 -->
+        <div style="text-align: center; position: relative; z-index: 1; padding: 0 0.5rem;">
+          <div style="width: 64px; height: 64px; margin: 0 auto; background: var(--ink-deep); border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); font-weight: 600;">27</div>
+          <p class="caption" style="margin-top: 1.25rem; color: var(--gold);">2027 · 长三角扩张</p>
+          <p class="h4" style="margin-top: 0.5rem; color: var(--gold);">10-15 家</p>
+          <ul style="margin-top: 1rem; list-style: none; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(245, 240, 232, 0.7); line-height: 1.8;">
+            <li>沪杭苏甬</li>
+            <li>城市合伙人</li>
+            <li>用户破 10 万</li>
+            <li>供应链成型</li>
+          </ul>
+        </div>
+
+        <!-- 2028 -->
+        <div style="text-align: center; position: relative; z-index: 1; padding: 0 0.5rem;">
+          <div style="width: 64px; height: 64px; margin: 0 auto; background: var(--ink-deep); border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); font-weight: 600;">28</div>
+          <p class="caption" style="margin-top: 1.25rem; color: var(--gold);">2028 · 深耕年</p>
+          <p class="h4" style="margin-top: 0.5rem; color: var(--gold);">500+ 站点</p>
+          <ul style="margin-top: 1rem; list-style: none; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(245, 240, 232, 0.7); line-height: 1.8;">
+            <li>网格化覆盖</li>
+            <li>供应链降本</li>
+            <li>15 分钟圈完善</li>
+            <li>标准化输出</li>
+          </ul>
+        </div>
+
+        <!-- 2029 -->
+        <div style="text-align: center; position: relative; z-index: 1; padding: 0 0.5rem;">
+          <div style="width: 64px; height: 64px; margin: 0 auto; background: var(--ink-deep); border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); font-weight: 600;">29</div>
+          <p class="caption" style="margin-top: 1.25rem; color: var(--gold);">2029 · 突破年</p>
+          <p class="h4" style="margin-top: 0.5rem; color: var(--gold);">500+ 城市</p>
+          <ul style="margin-top: 1rem; list-style: none; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(245, 240, 232, 0.7); line-height: 1.8;">
+            <li>全国化网络</li>
+            <li>站点破千</li>
+            <li>用户破百万</li>
+            <li>资本对接</li>
+          </ul>
+        </div>
+
+        <!-- 2030 -->
+        <div style="text-align: center; position: relative; z-index: 1; padding: 0 0.5rem;">
+          <div style="width: 64px; height: 64px; margin: 0 auto; background: var(--ink-deep); border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); font-weight: 600;">30</div>
+          <p class="caption" style="margin-top: 1.25rem; color: var(--gold);">2030 · 腾飞年</p>
+          <p class="h4" style="margin-top: 0.5rem; color: var(--gold);">千 城 万 店</p>
+          <ul style="margin-top: 1rem; list-style: none; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(245, 240, 232, 0.7); line-height: 1.8;">
+            <li>Pre-IPO 融资</li>
+            <li>全国化认知</li>
+            <li>智慧生态平台</li>
+            <li>价值统一</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 2.5rem; padding: 1.25rem; border: 1px solid var(--gold); text-align: center;">
+      <p class="caption" style="color: var(--gold);">五 年 关 键 指 标</p>
+      <div style="display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; flex-wrap: wrap;">
+        <div><span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500;">3+</span><p class="caption" style="margin-top: 0.5rem;">2026 模型店</p></div>
+        <div><span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500;">10+</span><p class="caption" style="margin-top: 0.5rem;">2027 长三角门店</p></div>
+        <div><span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500;">500+</span><p class="caption" style="margin-top: 0.5rem;">2028 合作站点</p></div>
+        <div><span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500;">500+</span><p class="caption" style="margin-top: 0.5rem;">2029 城市覆盖</p></div>
+        <div><span style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); font-weight: 500;">1000+</span><p class="caption" style="margin-top: 0.5rem;">2030 千城愿景</p></div>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">14</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 15 · 八大招商赋能体系
+     ============================================================ -->
+<section class="slide slide--paper" id="slide-15">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow eyebrow--paper">让合作伙伴快速启动 · 稳健盈利</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="color: var(--ink);">
+        八 大 招 商 <em style="color: var(--cinnabar); font-style: normal;">赋 能</em> 体 系
+      </h2>
+      <p class="body-lg" style="color: rgba(20, 17, 15, 0.6); margin-top: 1rem;">2026 年标杆落地 · 打造可复制的成功样板</p>
+    </div>
+
+    <div class="grid grid-2x4 reveal reveal--delay-2" style="margin-top: 2rem; gap: 1.25rem;">
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">01</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">品牌赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">统一 VI 形象、品牌手册、宣传物料输出</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">02</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">运营赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">标准化 SOP、服务流程、质控体系导入</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--cinnabar);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">03</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">技术赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">悦年优护平台、智能设备、数据中台</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">04</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">培训赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">院长、护理员、客服、销售全岗位培训</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">05</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">供应链赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">老年用品、康复辅具、食材集采降本</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">06</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">营销赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">地推方案、社群运营、线上线下获客</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">07</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">资源赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">政府关系、医保对接、公建民营项目</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--paper" style="padding: 1.5rem; border-left: 3px solid var(--gold);">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+          <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--cinnabar); font-weight: 500; line-height: 1;">08</div>
+          <div>
+            <div class="card__title" style="color: var(--ink); font-size: 1.125rem;">金融赋能</div>
+            <div class="card__desc" style="margin-top: 0.5rem; font-size: 0.8125rem;">选址评估、投资模型、融资方案设计</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 3rem; text-align: center;">
+      <p class="caption" style="color: var(--cinnabar);">三 家 模 型 店 · 杭 州 · 宁 波 · 金 华 周 边</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker" style="color: var(--cinnabar);">
+    <span class="page-marker__num" style="color: var(--cinnabar);">15</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 16 · CHAPTER 叁 · 使命与承诺
+     ============================================================ -->
+<section class="slide slide--gold-bg" id="slide-16">
+  <div class="bg-grid"></div>
+  <div class="chapter-num">叁</div>
+
+  <div class="container" style="text-align: center; position: relative; z-index: 1;">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content: center;">CHAPTER THREE</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1" style="margin-top: 1rem;">
+        使 命 与 承 诺
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 2rem;">
+      <div class="divider divider--center divider--long"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3">
+      <p class="body-lg" style="max-width: 720px; margin: 0 auto; color: rgba(245, 240, 232, 0.78);">
+        银龄事业，吾辈担当<br>
+        走出浙江，是中国众邦人的下一场远征
+      </p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">16</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 17 · 四份承诺
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-17">
+  <div class="bg-glow bg-glow--tl"></div>
+
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">四 份 承 诺 · FOUR COMMITMENTS</div>
+    </div>
+
+    <div class="reveal reveal--delay-1">
+      <h2 class="h1">这 份 发 心，凝 结 为 <em style="font-style: normal; color: var(--gold);">四 份 承 诺</em></h2>
+    </div>
+
+    <div class="grid grid-2 reveal reveal--delay-2" style="margin-top: 2rem; gap: 2rem;">
+      <div class="card" style="border-top: 2px solid var(--gold); padding: 2.5rem;">
+        <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem;">
+          <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); font-weight: 500; line-height: 1;">01</div>
+          <div>
+            <div class="caption" style="color: var(--gold);">对 长 者</div>
+            <div class="h3" style="margin-top: 0.25rem;">不 负 托 付</div>
+          </div>
+        </div>
+        <p class="card__desc" style="line-height: 1.85;">
+          您将一生中最值得、最应有尊严的阶段托付给我们——我们交还的，是覆盖医、康、养、护、智、学、助全生态的生命守护。安康时 AI 在云端守护，需要时护理团队全程衔接，紧急时自有医院与 96120 二十四小时待命。
+        </p>
+      </div>
+
+      <div class="card" style="border-top: 2px solid var(--gold); padding: 2.5rem;">
+        <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem;">
+          <div style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); font-weight: 500; line-height: 1;">02</div>
+          <div>
+            <div class="caption" style="color: var(--gold);">对 企 业</div>
+            <div class="h3" style="margin-top: 0.25rem;">不 负 初 心</div>
+          </div>
+        </div>
+        <p class="card__desc" style="line-height: 1.85;">
+          二十三年持续经营，不是靠运气，是靠每一步都走在初心上。不做赚快钱的事，不做省流程的事，不做对不住良心的事。众邦可以慢，不能偏。这条路上没有终点，每一程都要打胜仗。
+        </p>
+      </div>
+
+      <div class="card" style="border-top: 2px solid var(--cinnabar); padding: 2.5rem;">
+        <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem;">
+          <div style="font-family: var(--font-display); font-size: 3rem; color: var(--cinnabar-soft); font-weight: 500; line-height: 1;">03</div>
+          <div>
+            <div class="caption" style="color: var(--cinnabar-soft);">对 员 工</div>
+            <div class="h3" style="margin-top: 0.25rem;">不 负 年 华</div>
+          </div>
+        </div>
+        <p class="card__desc" style="line-height: 1.85;">
+          每一个选择养老行业的人，心里都有一团火。众邦要做的，是不让这团火在日常的琐碎中熄灭。持证培养、职业晋升、合理回报——更重要的是，让你的专业被看见、你的付出被尊重。
+        </p>
+      </div>
+
+      <div class="card" style="border-top: 2px solid var(--cinnabar); padding: 2.5rem;">
+        <div style="display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem;">
+          <div style="font-family: var(--font-display); font-size: 3rem; color: var(--cinnabar-soft); font-weight: 500; line-height: 1;">04</div>
+          <div>
+            <div class="caption" style="color: var(--cinnabar-soft);">对 社 会</div>
+            <div class="h3" style="margin-top: 0.25rem;">不 负 时 代</div>
+          </div>
+        </div>
+        <p class="card__desc" style="line-height: 1.85;">
+          3.2亿老龄人口不是数字，是 3.2亿个真实的人生。国家"9073"战略、银发经济国策——众邦不做旁观者，做答卷人。从 15 分钟养老服务圈到智慧康养全生态，每一个动作都在回答一个老龄化的中国，养老应该长什么样。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">17</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 18 · 承诺誓词
+     ============================================================ -->
+<section class="slide slide--ink" id="slide-18" style="background: linear-gradient(135deg, #0A0908 0%, #14110F 50%, #1F0E0E 100%); position: relative;">
+  <div class="bg-grid"></div>
+  <div class="bg-glow" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, var(--cinnabar-glow) 0%, transparent 70%);"></div>
+
+  <img class="seal-logo-center" src="assets/logo.png" alt="众邦康养">
+
+  <div class="container container--narrow" style="text-align: center; position: relative; z-index: 2;">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content: center;">CONSECRATION · 承 诺 誓 词</div>
+    </div>
+
+    <div class="reveal reveal--delay-1" style="margin-top: 1rem;">
+      <h2 class="h1" style="line-height: 1.1;">
+        众 邦 康 养<br><em style="font-style: normal; color: var(--cinnabar-soft);">承 诺 誓 词</em>
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin-top: 1rem;">
+      <div class="divider divider--center" style="background: var(--cinnabar);"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3" style="margin-top: 1.75rem;">
+      <p class="body-lg" style="line-height: 1.7; color: var(--ivory);">
+        我承诺加入<em style="color: var(--gold); font-style: normal;">中国银龄生态事业</em>，<br>
+        以<em style="color: var(--gold); font-style: normal;">敬畏之心</em>守护每一位长者，<br>
+        以<em style="color: var(--gold); font-style: normal;">专业之力</em>兑现每一份托付。
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-4" style="margin-top: 1.25rem;">
+      <p class="body-lg" style="line-height: 1.7; color: var(--ivory);">
+        走出浙江，是我们的远征；<br>
+        布局全国，是我们的使命。
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 1.25rem;">
+      <p class="body-lg" style="line-height: 1.7; color: var(--ivory);">
+        我承诺——<br>
+        <em style="color: var(--cinnabar-soft); font-style: normal;">敬畏生命，守正立命；</em><br>
+        <em style="color: var(--cinnabar-soft); font-style: normal;">专业立身，至诚至善；</em><br>
+        <em style="color: var(--cinnabar-soft); font-style: normal;">众志成城，久久为功。</em>
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 1.75rem;">
+      <p class="h4" style="color: var(--gold); font-weight: 500; letter-spacing: 0.1em; line-height: 1.65;">
+        打胜内心的「持久战」，<br>
+        让养老成为享老，<br>
+        为中国银龄生态事业发展，<br>
+        <span style="color: var(--cinnabar-soft);">贡献卓越创新的众邦力量！</span>
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 1.75rem;">
+      <div class="divider divider--center" style="background: var(--cinnabar); width: 80px;"></div>
+      <p class="caption" style="margin-top: 1.5rem; color: var(--cinnabar-soft);">—— 众邦康养全体同仁 · 2026</p>
+    </div>
+  </div>
+
+  <div class="page-marker" style="color: var(--cinnabar-soft);">
+    <span class="page-marker__num" style="color: var(--cinnabar-soft);">18</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 19 · 结语 + 行动召唤
+     ============================================================ -->
+<section class="slide slide--dark" id="slide-19">
+  <div class="bg-glow bg-glow--tl"></div>
+  <div class="bg-glow bg-glow--br"></div>
+
+  <div class="container container--narrow" style="text-align: center; position: relative; z-index: 1;">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content: center;">EPILOGUE · 结 语</div>
+    </div>
+
+    <div class="reveal reveal--delay-1" style="margin-top: 3rem;">
+      <p class="h3" style="color: var(--ivory); line-height: 1.7; font-weight: 400; letter-spacing: 0.05em;">
+        二十三年深耕，我们用行动证明<br>
+        下一个十年，我们用战略领航
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-2" style="margin: 2rem auto;">
+      <div class="divider divider--center divider--long"></div>
+    </div>
+
+    <div class="reveal reveal--delay-3">
+      <h2 class="hero-title" style="font-size: clamp(2.5rem, 5.5vw, 4.5rem);">
+        走出浙江<br>
+        <em style="font-style: normal;">共赢银龄</em>
+      </h2>
+    </div>
+
+    <div class="reveal reveal--delay-4" style="margin-top: 2rem;">
+      <p class="h4" style="color: var(--gold); font-weight: 400; letter-spacing: 0.15em;">
+        做 有 温 度 的 养 老 服 务
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 2rem;">
+      <div style="display: flex; justify-content: center; gap: 3rem; align-items: center;">
+        <div style="width: 80px; height: 1px; background: var(--gold);"></div>
+        <p class="caption">众 邦 康 养</p>
+        <div style="width: 80px; height: 1px; background: var(--gold);"></div>
+      </div>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 1.5rem;">
+      <p class="body-text" style="color: var(--gold-soft); letter-spacing: 0.2em;">
+        医 · 康 · 养 · 护 · 智 · 学 · 助
+      </p>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 1.25rem;">
+      <span class="footer-badge">开 创 享 老 新 时 代</span>
+    </div>
+
+    <div class="reveal reveal--delay-5" style="margin-top: 3rem;">
+      <p class="caption" style="color: var(--smoke);">2026 年度战略部署会议</p>
+    </div>
+  </div>
+
+  <img class="corner-logo" src="assets/logo.png" alt="众邦康养">
+  <div class="page-marker">
+    <span class="page-marker__num">19</span> &nbsp;/&nbsp; 19
+  </div>
+</section>
+
+<!-- 导航进度条 -->
+<nav class="nav-rail" id="navRail"></nav>
+
+<script>
+/* ============================================================
+   众邦康养 v2 — 交互层
+   ============================================================ */
+(function() {
+  'use strict';
+
+  // 0. 全局页脚 LOGO 注入(P2-P17, P19;P1 已手动;P18 中央已有水印,跳过)
+  document.querySelectorAll('section.slide').forEach((sec, idx) => {
+    const i = idx + 1;
+    if (i === 1 || i === 18) return;
+    if (sec.querySelector('.corner-logo, .seal-logo-center')) return;
+    const img = document.createElement('img');
+    img.src = 'assets/logo.png';
+    img.alt = '众邦康养';
+    img.className = (i === 13) ? 'corner-logo corner-logo-left' : 'corner-logo';
+    sec.appendChild(img);
+  });
+
+  const chapters = [
+    { id: 'slide-1',  label: '封面' },
+    { id: 'slide-2',  label: '发心' },
+    { id: 'slide-3',  label: '壹·回望' },
+    { id: 'slide-4',  label: '历程' },
+    { id: 'slide-5',  label: '定位' },
+    { id: 'slide-6',  label: '使命' },
+    { id: 'slide-7',  label: '价值观' },
+    { id: 'slide-8',  label: '七位一体' },
+    { id: 'slide-9',  label: '不可替代' },
+    { id: 'slide-10', label: '行业首创' },
+    { id: 'slide-11', label: '硕果' },
+    { id: 'slide-12', label: '贰·蓝图' },
+    { id: 'slide-13', label: '持久战' },
+    { id: 'slide-14', label: '五年规划' },
+    { id: 'slide-15', label: '八大赋能' },
+    { id: 'slide-16', label: '叁·承诺' },
+    { id: 'slide-17', label: '四份承诺' },
+    { id: 'slide-18', label: '誓词' },
+    { id: 'slide-19', label: '结语' }
+  ];
+
+  // 1. 构建导航条
+  const rail = document.getElementById('navRail');
+  chapters.forEach((ch, idx) => {
+    const dot = document.createElement('div');
+    dot.className = 'nav-rail__dot';
+    dot.dataset.target = ch.id;
+    dot.dataset.label = String(idx + 1).padStart(2, '0') + ' · ' + ch.label;
+    dot.addEventListener('click', () => {
+      const target = document.getElementById(ch.id);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    rail.appendChild(dot);
+  });
+
+  // 2. 滚动进入动画
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('is-visible');
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // 3. 当前章节高亮
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        rail.querySelectorAll('.nav-rail__dot').forEach(d => {
+          d.classList.toggle('is-active', d.dataset.target === id);
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  chapters.forEach(ch => {
+    const el = document.getElementById(ch.id);
+    if (el) sectionObserver.observe(el);
+  });
+
+  // 4. 数字递增
+  const countUpObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.counted) {
+        entry.target.dataset.counted = 'true';
+        const target = parseInt(entry.target.dataset.target, 10);
+        const duration = 1800;
+        const startTime = performance.now();
+        function animate(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.floor(eased * target);
+          entry.target.textContent = target >= 10000
+            ? current.toLocaleString('en-US')
+            : current;
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            entry.target.textContent = target >= 10000
+              ? target.toLocaleString('en-US')
+              : target;
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.count-up').forEach(el => countUpObserver.observe(el));
+
+  // 5. 键盘导航
+  let currentSlideIdx = 0;
+  const updateCurrentSlide = () => {
+    const scrollY = window.scrollY;
+    const viewportMid = scrollY + window.innerHeight / 2;
+    let closestIdx = 0;
+    let closestDist = Infinity;
+    chapters.forEach((ch, idx) => {
+      const el = document.getElementById(ch.id);
+      if (!el) return;
+      const dist = Math.abs(el.offsetTop + el.offsetHeight / 2 - viewportMid);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closestIdx = idx;
+      }
+    });
+    currentSlideIdx = closestIdx;
+  };
+  window.addEventListener('scroll', updateCurrentSlide, { passive: true });
+
+  document.addEventListener('keydown', (e) => {
+    let targetIdx = currentSlideIdx;
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
+      e.preventDefault();
+      targetIdx = Math.min(currentSlideIdx + 1, chapters.length - 1);
+    } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+      e.preventDefault();
+      targetIdx = Math.max(currentSlideIdx - 1, 0);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      targetIdx = 0;
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      targetIdx = chapters.length - 1;
+    } else {
+      return;
+    }
+    const target = document.getElementById(chapters[targetIdx].id);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // 6. 初始化第一个高亮
+  setTimeout(() => {
+    const firstDot = rail.querySelector('.nav-rail__dot');
+    if (firstDot) firstDot.classList.add('is-active');
+  }, 100);
+})();
+</script>
+
+</body>
+</html>
