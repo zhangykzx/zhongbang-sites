@@ -28,6 +28,3 @@ _templates/
 __pycache__/
 *.pyc
 *.pyo_reinsert_jidaoshan.py
-_*.py
-_backup
-
