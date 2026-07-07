@@ -27,4 +27,4 @@ _templates/
 # Python
 __pycache__/
 *.pyc
-*.pyo
+*.pyo_reinsert_jidaoshan.py
