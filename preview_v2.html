@@ -1023,53 +1023,34 @@ a { color: inherit; text-decoration: none; }
 <section class="slide slide--paper" id="slide-6">
   <div class="bg-grid" style="opacity: 0.4;"></div>
 
-  <div class="container container--narrow" style="text-align: center; position: relative; z-index: 1;">
+  <div class="container" style="text-align: center; position: relative; z-index: 1;">
     <div class="reveal">
       <div class="eyebrow eyebrow--paper" style="justify-content: center;">使命 · 愿景 · MISSION & VISION</div>
     </div>
 
-    <div class="reveal reveal--delay-1" style="margin-top: 3rem;">
-      <p class="caption" style="color: var(--cinnabar);">使 命</p>
-      <h2 class="h1" style="margin-top: 1rem; color: var(--ink);">
-        用 <em style="color: var(--cinnabar); font-style: normal;">温度</em> 点亮人生每一程
-      </h2>
+    <!-- 两列大字卡（模仿 P7 排版） -->
+    <div class="reveal reveal--delay-1" style="margin-top: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem;">
+
+      <!-- 使命 -->
+      <div class="card card--paper" style="text-align: center; padding: 2.5rem 1.5rem; border-left: 4px solid var(--cinnabar); background: #fff;">
+        <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--cinnabar); line-height: 1; font-weight: 500; letter-spacing: 0.1em;">使 命</div>
+        <div style="margin-top: 1.75rem; font-family: var(--font-display); font-size: 1.85rem; color: var(--ink); line-height: 1.55; letter-spacing: 0.04em;">
+          用 <em style="color: var(--cinnabar); font-style: normal;">温度</em> 点亮人生每一程
+        </div>
+      </div>
+
+      <!-- 愿景 -->
+      <div class="card card--paper" style="text-align: center; padding: 2.5rem 1.5rem; border-left: 4px solid var(--cinnabar); background: #fff;">
+        <div style="font-family: var(--font-display); font-size: 3.5rem; color: var(--cinnabar); line-height: 1; font-weight: 500; letter-spacing: 0.1em;">愿 景</div>
+        <div style="margin-top: 1.75rem; font-family: var(--font-display); font-size: 1.85rem; color: var(--ink); line-height: 1.55; letter-spacing: 0.04em;">
+          打 造 <em style="color: var(--cinnabar); font-style: normal;">智 慧 银 龄</em> 全 生 态
+        </div>
+      </div>
+
     </div>
 
-    <div class="reveal reveal--delay-2" style="margin-top: 2rem;">
-      <p class="body-text" style="color: rgba(20, 17, 15, 0.75);">
-        从备老到享老 从养老到晚年——<br>
-        人生的每一程 都不该在暗里等待 而该被温柔照亮<br>
-        养老不是「等天黑」 是「把灯点亮」<br>
-        我们以智慧康养为底座 专业与温度为支柱<br>
-        引每一段生命走出有尊严 有温度 有质量的轨迹
-      </p>
-    </div>
-
-    <div class="reveal reveal--delay-3" style="margin: 2rem auto;">
-      <div class="divider divider--center divider--long" style="background: var(--cinnabar);"></div>
-    </div>
-
-    <div class="reveal reveal--delay-4">
-      <p class="caption" style="color: var(--cinnabar);">愿 景</p>
-      <h2 class="h1" style="margin-top: 1rem; color: var(--ink);">
-        打造 <em style="color: var(--cinnabar); font-style: normal;">智慧银龄</em> 全生态
-      </h2>
-    </div>
-
-    <div class="reveal reveal--delay-5" style="margin-top: 2rem;">
-      <p class="body-text" style="color: rgba(20, 17, 15, 0.75);">
-        以科技为基石 服务为温度 自研平台为支撑<br>
-        构建覆盖全国核心社区的智慧康养生态体系<br>
-        从长三角出发 匠心打造<br>
-        「中华银龄家园」与「智慧康养之心」生态布局<br>
-        将这一体系延伸到每一座城市 每一个家庭<br>
-        全力助推国家「银发经济」养老战略走深走实<br>
-        开创中国人自己的康养新范式<br>
-        ——引领整个产业向智慧化 全生态方向迭代升级
-      </p>
-    </div>
-
-    <div class="reveal reveal--delay-5" style="margin-top: 3rem; display: flex; justify-content: center; gap: 4rem;">
+    <!-- 底部两栏：对长者 / 对子女 -->
+    <div class="reveal reveal--delay-2" style="margin-top: 3.5rem; display: flex; justify-content: center; gap: 4rem;">
       <div style="text-align: center;">
         <p class="caption" style="color: var(--cinnabar);">对 长 者</p>
         <p class="h4" style="margin-top: 0.5rem; color: var(--ink);">被善待 · 有尊严 · 有所乐</p>
